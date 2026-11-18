@@ -1,0 +1,18 @@
+{
+  "dataset": "Titanic-Dataset.csv",
+  "random_state": 42,
+  "test_size": 0.2,
+  "models": [
+    "LogisticRegression",
+    "RandomForest"
+  ],
+  "features": [
+    "Pclass",
+    "Sex",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "Embarked"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "project": "Titanic Model A/B Experiment",
+  "dataset": "Titanic-Dataset.csv",
+  "purpose": "Educational comparison of survival classifiers",
+  "models": [
+    "LogisticRegression",
+    "RandomForest"
+  ],
+  "random_state": 42,
+  "test_size": 0.2,
+  "evaluation_metrics": [
+    {
+      "model": "LogisticRegression",
+      "accuracy": 0.8044692737430168,
+      "precision": 0.7931034482758621,
+      "recall": 0.6666666666666666,
+      "f1": 0.7244094488188977
+    },
+    {
+      "model": "RandomForest",
+      "accuracy": 0.8100558659217877,
+      "precision": 0.8723404255319149,
+      "recall": 0.5942028985507246,
+      "f1": 0.7068965517241379
+    }
+  ],
+  "governance_checks": {
+    "reproducible_split_documented": true,
+    "model_artifacts_saved": true,
+    "group_fairness_evaluated": true,
+    "explainability_artifact_saved": true,
+    "limitations_documented": true
+  },
+  "limitations": [
+    "Historical Titanic data is not representative of modern populations.",
+    "Observed group differences do not establish causation.",
+    "Results do not establish regulatory compliance.",
+    "Test-set results may vary on other datasets."
+  ],
+  "privacy_and_compliance": "Use only for educational analysis; do not use for real-world eligibility or consequential decisions."
+}
